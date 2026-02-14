@@ -1,4 +1,4 @@
-<h1>GuardianOffline</h1>
+<i><h1>GuardianOffline</h1></i>
 An offline-first emergency medical guidance PWA
 
 <h3>Project Title :</h3>GuardianOffline 
