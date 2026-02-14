@@ -4,20 +4,28 @@
     --primary-red: #ef4444;
     --primary-green: #22c55e;
     --text-main: #f8fafc;
-    --accent-blue: #3b82f6;
+    --accent-blue: #2d5dab;
 }
-
+#quote{
+    text-align:center ;
+    margin:20px;
+    border-radius:20px;
+    padding:20px;
+    background: rgba(54, 190, 13, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #94a3b8;
+}
 body {
-    background-color: var(--bg-dark);
+    background-color: var(--primary-red);
     color: var(--text-main);
     font-family: 'Inter', system-ui, sans-serif;
     margin: 0;
-    display: flex;
+    display:flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     overflow: hidden;
-    background-image: radial-gradient(circle at top right, #1e293b, #0f172a);
+     background-image: radial-gradient(circle at bottom , #1e293b, #a4144e); 
 }
 
 .app-container {
@@ -29,7 +37,7 @@ body {
 header h1 {
     font-size: 2.5rem;
     margin: 0;
-    background: linear-gradient(to right, #60a5fa, #3b82f6);
+    background: linear-gradient(to left, #75ed05, #4d69b0);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -51,15 +59,15 @@ header h1 {
 
 .menu-btn {
     background: var(--card-bg);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(234, 8, 8, 0.1);
     padding: 25px 15px;
     color: white;
     border-radius: 16px;
     font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s ease;
+    cursor:grab;
+    transition: all 0.1s ease;
     backdrop-filter: blur(10px);
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px -1px rgba(216, 217, 225, 0.2);
 }
 
 .menu-btn:hover {
