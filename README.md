@@ -14,8 +14,11 @@ An offline-first emergency medical guidance PWA
 
 
 <h3>How to use:</h3> 1. Visit the link.
+<br>/
 2. Add to Home Screen (on mobile).
+<br/>
 3. Turn off Wi-Fi and test the logic.
+<br/>
 </div>
 
-<p><b><h2>Click on the Image to access the website :<h2><b></p><a href="https://devesh-tiw.github.io/GuardianOffline/"><img src="guardian.png" height="80"width="80"></a>
+<p><b><h2>Click on the below Image to access the website :<h2><b></p><a href="https://devesh-tiw.github.io/GuardianOffline/"><img src="guardian.png" height="80"width="80"></a>
