@@ -14,7 +14,7 @@ An offline-first emergency medical guidance PWA
 
 
 <h3>How to use:</h3> 1. Visit the link.
-<br>/
+<br>
 2. Add to Home Screen (on mobile).
 <br/>
 3. Turn off Wi-Fi and test the logic.
