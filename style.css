@@ -1,0 +1,168 @@
+:root {
+    --bg-dark: #0f172a;
+    --card-bg: rgba(30, 41, 59, 0.7);
+    --primary-red: #ef4444;
+    --primary-green: #22c55e;
+    --text-main: #f8fafc;
+    --accent-blue: #3b82f6;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+    font-family: 'Inter', system-ui, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    background-image: radial-gradient(circle at top right, #1e293b, #0f172a);
+}
+
+.app-container {
+    width: 95%;
+    max-width: 450px;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    background: linear-gradient(to right, #60a5fa, #3b82f6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#offline-tag {
+    color: var(--primary-green);
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+/* Grid Menu Styling */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.menu-btn {
+    background: var(--card-bg);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 25px 15px;
+    color: white;
+    border-radius: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.menu-btn:hover {
+    transform: translateY(-3px);
+    border-color: var(--accent-blue);
+    background: rgba(59, 130, 246, 0.1);
+}
+
+/* Guidance Screen Styling */
+#display-area {
+    background: var(--card-bg);
+    padding: 40px 25px;
+    border-radius: 24px;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin: 20px 0;
+    animation: fadeIn 0.5s ease;
+}
+
+#instruction {
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 1.4;
+}
+
+/* Result Styling - This kicks in when the choice is made */
+.result-style {
+    color: var(--primary-green);
+    font-weight: 800;
+    text-transform: uppercase;
+    border: 2px solid var(--primary-green);
+    padding: 20px;
+    border-radius: 12px;
+    background: rgba(34, 197, 94, 0.1);
+}
+
+.button-group button {
+    flex: 1;
+    padding: 20px;
+    border-radius: 12px;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+#btn-yes {
+    background: var(--primary-green);
+    color: white;
+}
+
+#btn-no {
+    background: var(--primary-red);
+    color: white;
+}
+
+/* Enhanced Back to Menu Button */
+.reset {
+    margin-top: 30px;
+    background: rgba(255, 255, 255, 0.05);
+    /* Very subtle background */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #94a3b8;
+    padding: 12px 24px;
+    border-radius: 50px;
+    /* Capsule shape */
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: auto;
+    /* Don't take full width */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    /* Space for the emoji/icon */
+}
+
+.reset:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    border-color: var(--accent-blue);
+    transform: translateY(-2px);
+}
+
+.reset:active {
+    transform: translateY(0);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

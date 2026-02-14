@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GuardianOffline</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+    <div class="app-container">
+        <header>
+            <h1>🛡️ Guardian</h1>
+            <p id="offline-tag">100% OFFLINE MODE</p>
+        </header>
+
+        <div id="menu-screen">
+            <h3>Select Emergency:</h3>
+            <div class="grid-container" id="menu-grid">
+            </div>
+        </div>
+
+        <div id="guide-screen" style="display: none;">
+            <div id="display-area">
+                <h2 id="instruction"></h2>
+            </div>
+            <div class="button-group" id="action-btns">
+                <button id="btn-yes" onclick="handleInput(true)">YES</button>
+                <button id="btn-no" onclick="handleInput(false)">NO</button>
+            </div>
+            <button class="reset" onclick="resetApp()">🔙 Back to Menu</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
